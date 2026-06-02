@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cropdf"
+version = "0.1.0"
+description = "Automatically crop PDF pages."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = ["PyMuPDF", "numpy"]
+
+[project.scripts]
+cropdf = "cropdf.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
