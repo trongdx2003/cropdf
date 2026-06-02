@@ -1,5 +1,3 @@
-# cropdf
-
 **cropdf** automatically removes unnecessary whitespace from PDF figures, making them easier to fit into LaTeX documents.
 
 Simply run:
